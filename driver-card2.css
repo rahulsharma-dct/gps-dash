@@ -198,6 +198,23 @@
   height: 16px;
 }
 
+/* Changes Done by Bhavya */
+.driver-expanded-content {
+  display: none;
+}
+
+.driver-item.expanded .driver-expanded-content {
+  display: block;
+}
+
+.driver-item .dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.driver-item.expanded .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 480px) {
   body {
     max-width: 100%;
@@ -211,7 +228,17 @@
     padding: 0 16px;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
   .pagination {
-    padding: 16px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

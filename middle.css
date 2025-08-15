@@ -36,6 +36,7 @@
   width: 40px;
   height: 40px;
   border: 1px solid #e2e8f0;
+  border-radius: 8px 0 0 8px;
 
   display: flex;
   align-items: center;
@@ -44,10 +45,11 @@
 }
 
 .view-toggle:first-child {
-  background-color: #e7f6f8;
-
-  border-radius: 8px 0 0 8px;
   border-right: none;
+}
+
+.view-toggle.active {
+  background-color: #e7f6f8;
 }
 
 .view-toggle:first-child svg {
